@@ -1,0 +1,99 @@
+.title{
+    text-align: center;
+}
+.place-order {
+    display: flex;
+    flex-direction: column; /* Align items in a column */
+    align-items: center; /* Center items horizontally */
+    gap: 40px;
+    margin-top: 50px;
+    font-family: 'Helvetica Neue', sans-serif;
+    color: #333;
+    text-align: center; /* Center text content */
+}
+
+.place-order-left {
+    width: 100%;
+    max-width: 400px;
+    text-align: left; /* Align text left within the left section */
+}
+
+.place-order-left .title {
+    font-size: 28px;
+    font-weight: bold;
+    color: #222;
+    margin-bottom: 30px;
+}
+
+.place-order-left input {
+    margin-bottom: 12px;
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #aaa;
+    border-radius: 8px;
+    outline-color: #0077cc;
+    font-size: 16px;
+}
+
+.place-order-left .multi-fields {
+    display: flex;
+    gap: 12px;
+}
+
+.place-order-right {
+    background-color: #1e90ff; /* Mid blue color */
+    width: max(15vw, 200px);
+    padding: 12px 0px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.cart-total {
+    width: 100%; /* Ensure full width */
+    max-width: 500px; /* Adjust max-width as needed */
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Center text content */
+}
+
+.cart-total h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #111;
+}
+
+.cart-total-details {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+/* Added margin to the list (or elements) to push the button down */
+.cart-total ul {
+    margin-bottom: 20px;
+}
+
+.place-order-right {
+    width: 100%; /* Ensure button fills its container */
+    padding: 12px;
+    background-color: #1e90ff; /* Mid blue color */
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+    box-sizing: border-box; /* Ensure padding is included in width */
+}
+
+.place-order-right:hover {
+    background-color: #87ceeb; /* Sky blue color on hover */
+}
+
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 10px;
+}
